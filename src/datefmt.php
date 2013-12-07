@@ -817,6 +817,64 @@ DateFmt::$languages = array(
     'number word' => 'n%', 'exact' => 'n% p',
     'ago' => '% ago', 'in future' => 'after %',
   ),
+  
+  'de' => array(
+      'name' => 'Deutsch',
+  
+      // True if number ending rule repets after 100th, e.g.:
+      // [1 замоК], 11 замкОВ, [21 замоК, 31 замоК, ...]
+      // False if they stay the same (21th as 11th): 1 letter, [11 letterS, 21 letterS]
+      'number rolls' => false, 'force AT-form for AGO' => false, '12 hour time' => false,
+  
+      'float delim' => '.', 'at-time' => ' um', 'AM' => 'AM', 'PM' => 'PM',
+  
+      // d##m & d#my
+      'date without year' => 'd. M', 'date with year' => 'd.m.y',
+      // h##m & h##ms
+      'time without seconds' => 'h:m %', 'time with seconds' => 'h:m:s %',
+  
+      // month and day names should be capitalized if the language requires them to
+      // be as such (as in English); if capitalization only happens when it's a start
+      // of sentense then these should be in lower case.
+      'full months'   => array('Januar', 'Februar', 'März', 'April', 'Mai',
+                               'Juni', 'Juli', 'August', 'September', 'Oktober',
+                               'November', 'Dezember'),
+      'short months'  => array('Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul',
+                               'Aug', 'Sep', 'Okt', 'Nov', 'Dez'),
+  
+      'full days'     => array('Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Freitag',
+                               'Donnerstag', 'Samstag'),
+      'short days'    => array('So', 'Mo', 'Di', 'Mi', 'Fr', 'Do', 'Sa'),
+  
+      'full year' => 'Jahr',
+      'short year' => 'j.',
+  
+      // 12s, 3 min, 2 years, ...
+      // number string: array('stem', 0, 1, 2-4, 5-20)
+      'AGO s' => array(' Sekund', 'en', 'e', 'en', 'en'), 'AGO short s' => 's',
+      'AGO i' => array(' Minute', 'n', '', 'n', 'n'), 'AGO short i' => 'mi',
+      'AGO h' => array(' Stunde', 'n', '', 'n', 'n'),   'AGO short h' => 'std',
+      'AGO d' => array(' Tag', 'en', '', 'en', 'en'),    'AGO short d' => 't',
+      'AGO o' => array(' Monat', 'en', '', 'en', 'en'),  'AGO short o' => 'mo',
+      'AGO w' => array(' Woche', 'n', '', 'n', 'n'),   'AGO short w' => 'w',
+      'AGO y' => array(' Jahr', 'en', '', 'en', 'en'),   'AGO short y' => 'j',
+  
+      // number - distance in days.
+      'AGO b0' => 'Heute', 'AGO short b0' => 'Heute',
+      'AGO b1' => 'Gestern', 'AGO short b1' => 'Gestern',
+      'AGO b2' => 'Vorgestern', 'AGO short b2' => 'Vorgestern',
+  
+      'AGO future b0' => 'later today', 'AGO future short b0' => 'today',
+      'AGO future b1' => 'tomorrow', 'AGO future short b1' => 'tomorrow',
+      'AGO future b2' => 'day after tomorrow', 'AGO future short b2' => 'day after',
+  
+      'half s' => 'halbe Sekunde', 'half i' => 'halbe Minute', 'half h' => 'halbe Stunde',
+      'half d' => 'halber Tag',    'half o' => 'halber Monat',  'half w' => 'halbe Woche',
+      'half y' => 'halbes Jahr',
+  
+      'number word' => 'n%', 'exact' => 'n% p',
+      'ago' => 'vor %', 'in future' => 'after %',
+    ),
 
   'ru' => array(
     'name' => 'Русский',
