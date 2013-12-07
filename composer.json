@@ -12,5 +12,10 @@
 	"config": {
 		"preferred-install": "dist"
 	},
+	"autoload": {
+        "psr-0": { "DateFmt": "src/" },
+        "files": [ "src/datefmt.php" ]
+    },
+    },
 	"minimum-stability": "dev"
 }
