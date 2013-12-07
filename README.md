@@ -1,5 +1,7 @@
 # DateFmt
 
+Forked from https://github.com/ProgerXP/DateFmt
+
 **DateFmt** is an easy-to-use (mostly one method) locale-aware date formatting class supporting national date/time formats and relative time (like "1 day ago"). It focuses on easy-to-remember format strings (hello, `date()` and `strftime()`).
 
 [ [Full syntax & API](http://proger.i-forge.net/DateFmt/cWq) ]
