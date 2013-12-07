@@ -16,6 +16,5 @@
         "psr-0": { "DateFmt": "src/" },
         "files": [ "src/datefmt.php" ]
     },
-    },
 	"minimum-stability": "dev"
 }
