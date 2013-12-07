@@ -1,0 +1,23 @@
+{
+    "name": "gcWorld/DateFmt",
+    "description": "Dates",
+    "keywords": ["datefmt"],
+    "license": "UNKNOWN",
+    "authors": [
+        {
+            "name": "ProgerXP ",
+            "homepage": "http://proger.i-forge.net/DateFmt/cWq"
+        }
+    ],
+		"post-install-cmd": [
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan optimize"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
