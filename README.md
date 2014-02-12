@@ -29,21 +29,26 @@ $formatted = DateFmt::Format('D__, d##my', $your_timestamp, 'ru');
 
 The first argument is the format string, the second - timestamp (`time()` if omitted), the third - language (`en` if omitted).
 
-## Installation
-As usual, use the **Artisan**:
+## Installation with Composer
+Add this to your Composer.json:
 
 ```
-php artisan bundle:install datefmt
+"gcWorld/DateFmt":"dev-master"
 ```
 
-Then put this into your **application/bundles.php**:
+and also:
+```
+"repositories": [
+            {
+                "type": "vcs",
+                "url": "https://github.com/gcWorld/DateFmt"
+            }
+        ],
+```
 
-```PHP
-'datefmt' => array(
-  'autoloads' => array(
-    'map' => array('DateFmt' => '(:bundle)/datefmt.php')
-  )
-)
+Run:
+```
+composer update
 ```
 
 Now whenever you refer to `DateFmt` in your code its class will be autoloaded.
